@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Web Pigeon</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400&display=swap" rel="stylesheet">
+    <script type="text/javascript" src= "https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="./materialize.min.js"></script>
+    <link rel="stylesheet" href="./materialize.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header class="navbar-fixed">
+        <nav class="nav-extended red darken-1">
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo"><span>W</span>eb <span>P</span>igeon</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a class="modal-trigger" href="#"><i class="fa fa-home"></i> Home</a></li>
+                    <li><a class="modal-trigger" href="#"><i class="fa fa-search"></i> Search</a></li>
+                    <li><a class="modal-trigger" href="#"><i class="fa fa-user"></i> Profile</a></li>
+                </ul>
+            </div>
+            
+        </nav>
+    </header>
+
+    <main class="container home">
+        <section>
+            <h3>Welcome To Web Pigeon</h3>
+        </section>
+        <section>
+            <p>Where you can send and receive messages without knowing sender name.</p>
+        </section>
+        <section>
+            <a href="#" class="btn red">Create Account</a>
+            <span> or </span>
+            <a href="#" class="btn red">Log in</a>
+        </section>
+    </main>
+
+    <footer class="page-footer red darken-1">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                <h5 class="white-text">Created by Ahmed Saber</h5>
+                <p class="grey-text text-lighten-4">Ahmed Saber is an egyptian Full Stack Web Developer who was born in 2001.</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Used Technologies</h5>
+                <ul>
+                    <li class="left">HTML5</li>
+                    <li class="right">CSS3</li><br>
+                    <li class="left">JavaScript</li>
+                    <li class="right">jQuery</li><br>
+                    <li class="left">Materialize.css</li>
+                    <li class="right">Google Fonts</li><br>
+                    <li class="left">Material Icons</li>
+                    <li class="right">Font Awesome</li>
+                </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+            <span class="right">© 2022 Copyright : Ahmed Saber</span>
+            <a class="grey-text text-lighten-4 left" href="#!"><i class="fa fa-facebook"></i><i class="fa fa-instagram"></i><i class="fa fa-twitter"></i><i class="fa fa-linkedin"></i><i class="fa fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="nav-content hide-on-large-only">
+        <ul class="tabs tabs-transparent">
+            <li class="tab"><a class="modal-trigger" href="#"><i class="fa fa-search"></i></a></li>
+            <li class="tab"><a class="modal-trigger" href="#"><i class="fa fa-home"></i></a></li>
+            <li class="tab"><a class="modal-trigger" href="#"><i class="fa fa-user"></i></a></li>
+        </ul>
+    </div>
+
+    <button onclick="getpics()" class="btn-large right btn-floating waves-effect waves-white red darken-1"><i class="fa fa-magic"></i></button>
+</body>
+<script src="./script.js"></script>
+</html>

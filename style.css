@@ -208,7 +208,7 @@ main.container.about form input{
     border: none;
     outline: none;
     height: 44px;
-    padding: 8px 40px;
+    padding: 8px 8px 8px 40px;
     font-size: 18px;
     position: relative;
     z-index: 9;
@@ -256,11 +256,11 @@ main.container.about .user-card{
 }
 main.container.about .user-card img{
     width: 100%;
-    border-radius: 3px;
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 3px;
-    -ms-border-radius: 3px;
-    -o-border-radius: 3px;
+    border-radius: 2px 2px 0px 0px;
+    -webkit-border-radius: 2px 2px 0px 0px;
+    -moz-border-radius: 2px 2px 0px 0px;
+    -ms-border-radius: 2px 2px 0px 0px;
+    -o-border-radius: 2px 2px 0px 0px;
 }
 main.container.about .user-card h3{
     color: #F88F01;
@@ -430,7 +430,7 @@ main.container.profile .messages form input{
     border: none;
     outline: none;
     height: 44px;
-    padding: 8px 40px;
+    padding: 8px 8px 8px 40px;
     font-size: 18px;
     position: relative;
     z-index: 9;

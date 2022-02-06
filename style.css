@@ -1,3 +1,9 @@
+:root{
+    --pri: "#F88F01";
+    --font: "#f7f7f7";
+    --background: "#080808";
+    --nav: "#2b2b2b";
+}
 *{
     padding: 0;
     margin: 0;
@@ -11,6 +17,7 @@ body{
 header{
     position: fixed;
     width: 100%;
+    z-index: 99;
 }
 nav{
     padding: 0px 0px 0px 10px;
@@ -33,9 +40,12 @@ nav .links{
     justify-content: center;
 }
 nav .link{
-    color: #F88F01;
+    color: #f7f7f7;
     text-decoration: none;
     padding: 2px 10px;
+}
+nav .link.active{
+    color: #F88F01;
 }
 
 /* bottom navbar */
@@ -50,9 +60,13 @@ nav .link{
     justify-content: space-evenly;
     padding: 14px 2px;
     display: none;
+    z-index: 99;
 }
 .bottom-nav .fa{
     font-size: 26px;
+    color: #f7f7f7;
+}
+.bottom-nav a.active .fa{
     color: #F88F01;
 }
 
@@ -154,6 +168,7 @@ main.container.home span{
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
+    z-index: 99;
 }
 
 /* media queries */
@@ -166,5 +181,304 @@ main.container.home span{
     }
     nav .links{
         display: none;
+    }
+}
+
+
+
+/*     ABOUT     */
+main.container.about{
+    box-sizing: border-box;
+    padding: 80px 12px;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+main.container.about form{
+    position: relative;
+    margin: 0 0 18px 0;
+}
+main.container.about form input{
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    height: 44px;
+    padding: 8px 40px;
+    font-size: 18px;
+    position: relative;
+    z-index: 9;
+    background-color: #2b2b2b;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    color: #F88F01b2;
+}
+main.container.about form input::placeholder{
+    color: #F88F01;
+    opacity: 0.8;
+}
+main.container.about form input:focus{
+    color: #F88F01;
+}
+main.container.about form .icon {
+    font-size: 26px;
+    color: #F88F01;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 10;
+}
+main.container.about .search-results{
+    text-align: center;
+}
+main.container.about .user-card{
+    box-sizing: border-box;
+    width: calc(50% - 32px);
+    display: inline-block;
+    min-width: 100px;
+    max-width: 220px;
+    margin: 10px;
+    border: 2px solid #F88F01;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    position: relative;
+    padding: 0 0 6px 0;
+}
+main.container.about .user-card img{
+    width: 100%;
+    border-radius: 3px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+main.container.about .user-card h3{
+    color: #F88F01;
+    font-size: 16px;
+}
+main.container.about .user-card p{
+    color: #F88F01;
+    font-size: 12px;
+}
+main.container.about .user-card a{
+    color: #f7f7f7;
+    font-size: 20px;
+    background-color: #F88F01;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 0px 2px 0px 6px;
+    -webkit-border-radius: 0px 2px 0px 6px;
+    -moz-border-radius: 0px 2px 0px 6px;
+    -ms-border-radius: 0px 2px 0px 6px;
+    -o-border-radius: 0px 2px 0px 6px;
+}
+
+
+
+/*     PROFILE     */
+main.container.profile{
+    box-sizing: border-box;
+    padding: 80px 12px;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+main.container.profile .user-data{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+main.container.profile .user-data .img-container{
+    width: 30%;
+}
+main.container.profile .user-data .img-container img{
+    width: 100%;
+    border-radius: 3px;
+}
+main.container.profile .user-data .text-container{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+main.container.profile .user-data .text-container h1{
+    color: #F88F01;
+}
+main.container.profile .user-data .text-container p{
+    color: #F88F01;
+}
+main.container.profile .user-data .text-container .profile-btns{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 0 0 0;
+}
+main.container.profile .user-data .text-container .profile-btns a{
+    color: #f7f7f7;
+    font-size: 18px;
+    background-color: #F88F01;
+    padding: 8px 24px;
+    margin: 6px 10px 0px 0px;
+    text-decoration: none;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+main.container.profile .messages{
+    margin: 30px 0px 10px 0px;
+}
+main.container.profile .messages h2{
+    color: #F88F01;
+    text-align: center;
+}
+main.container.profile .messages .messages-container, main.container.profile .messages .fav-messages-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+main.container.profile .messages .fav-messages-container{
+    display: none;
+}
+main.container.profile .messages .messages-container .msg, main.container.profile .messages .fav-messages-container .msg{
+    border: 1px solid #F88F01;
+    border-radius: 0px 3px 3px 3px;
+    -webkit-border-radius: 0px 3px 3px 3px;
+    -moz-border-radius: 0px 3px 3px 3px;
+    -ms-border-radius: 0px 3px 3px 3px;
+    -o-border-radius: 0px 3px 3px 3px;
+    margin: 20px;
+    padding: 10px;
+    position: relative;
+}
+main.container.profile .messages .messages-container .msg p, main.container.profile .messages .fav-messages-container .msg p{
+    color: #F88F01;
+    /*  Edit direction with js  */
+    direction: ltr;
+}
+main.container.profile .messages .messages-container .msg span, main.container.profile .messages .fav-messages-container .msg span{
+    position: absolute;
+    top: -1px;
+    left: -16px;
+    color: #f7f7f7;
+    background-color: #F88F01;
+    padding: 4px;
+    border-radius: 3px 0px 0px 3px;
+    -webkit-border-radius: 3px 0px 0px 3px;
+    -moz-border-radius: 3px 0px 0px 3px;
+    -ms-border-radius: 3px 0px 0px 3px;
+    -o-border-radius: 3px 0px 0px 3px;
+}
+main.container.profile .messages .messages-container .msg i.fa.fa-star, main.container.profile .messages .fav-messages-container .msg i.fa.fa-star{
+    color: #b2b2b2;
+    float: right;
+    padding: 2px;
+    margin: 2px;
+    font-size: 24px;
+}
+main.container.profile .messages .messages-container .msg i.fa.fa-star.faved, main.container.profile .messages .fav-messages-container .msg i.fa.fa-star.faved{
+    color: #F88F01;
+}
+main.container.profile .messages .rec-or-fav{
+    text-align: center;
+    margin: 10px 2px;
+}
+main.container.profile .messages .rec-or-fav button{
+    color: #f7f7f7;
+    font-size: 18px;
+    background-color: #F88F01;
+    padding: 8px 24px;
+    margin: 6px 5px 0px 5px;
+    text-decoration: none;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border: none;
+}
+main.container.profile .messages form{
+    position: relative;
+    margin: 24px 0px 6px 0px;
+}
+main.container.profile .messages form input{
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    height: 44px;
+    padding: 8px 40px;
+    font-size: 18px;
+    position: relative;
+    z-index: 9;
+    background-color: #2b2b2b;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    color: #F88F01b2;
+}
+main.container.profile .messages form input::placeholder{
+    color: #F88F01;
+    opacity: 0.8;
+}
+main.container.profile .messages form input:focus{
+    color: #F88F01;
+}
+main.container.profile .messages form .icon {
+    font-size: 26px;
+    color: #F88F01;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 10;
+}
+
+/* media queries */
+@media screen and (max-width: 900px) {
+    main.container.profile .user-data{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    main.container.profile .user-data .img-container{
+        width: 80%;
+        margin: 0 auto;
+    }
+    main.container.profile .user-data .text-container{
+        text-align: center;
+    }
+    main.container.profile .user-data .text-container .profile-btns{
+        justify-content: center;
+    }
+    main.container.profile .user-data .text-container .profile-btns a{
+        margin: 6px;
+    }
+    main.container.profile .messages .messages-container .msg, main.container.profile .messages .fav-messages-container .msg{
+        width: 100%;
     }
 }
